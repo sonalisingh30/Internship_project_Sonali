@@ -1,0 +1,44 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 30px); /* 9 columns with equal width */
+  gap: 5px; /* Adds a gap between cells */
+  margin: 20px auto; /* Centers the grid horizontally */
+}
+
+.row {
+  display: contents; /* Ensures that each row's cells are placed correctly */
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #000; /* Adds a regular border around each cell */
+  box-sizing: border-box; /* Ensures the border is included in the cell's size */
+}
+
+.cell:nth-child(3n) {
+  border-right: 2px solid #000; /* Adds a thicker border on the right for every 3rd column */
+}
+
+.row:nth-child(3n) .cell {
+  border-bottom: 2px solid #000; /* Adds a thicker border on the bottom for every 3rd row */
+}
+
+/* Additional borders to make the grid look complete */
+.cell:nth-child(1) {
+  border-left: 2px solid #000;
+}
+
+.cell:nth-last-child(1) {
+  border-right: 2px solid #000;
+}
+
+.row:nth-child(1) .cell {
+  border-top: 2px solid #000;
+}
+
+.row:nth-last-child(1) .cell {
+  border-bottom: 2px solid #000;
+}
