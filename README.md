@@ -10,3 +10,5 @@ This project is a web-based Sudoku Solver built using Next.js (preferably) or Re
 - **Error Handling**: Displays error messages for invalid input or unsolvable puzzles.
 - **Styling**: Clear separation of 3x3 sub-grids for better visualization.
 
+[View a Demo Here](https://sonali-internship-sudoko-project.netlify.app/)
+
